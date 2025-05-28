@@ -27,3 +27,19 @@ function showSectionById(id){
 //    show the section with provided id
 document.getElementById(id).classList.remove('hidden')
 }
+
+
+// add transction function
+function addTransctionHistory(amount, newAmount, a){
+    const div = document.createElement('div');
+  console.log(div)
+  div.classList.add('bg-yellow-300');
+
+   div.innerHTML = `
+    <h4>${a} Money:</h4>
+    <p>${amount} ${a}. New Balance: ${newAmount}</p>
+`;
+
+   document.getElementById('transgiction-section').appendChild(div); // Corrected ID spelling
+      
+}
