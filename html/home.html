@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+     <!-- daisai ui and tailwind link cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1>Welcome to Home page</h1>
+    <main class="flex justify-center">
+          <div class="mockup-phone">
+  <div class="mockup-phone-camera "></div>
+  <div class="mockup-phone-display text-black grid place-content-center bg-white  ">
+    <!-- available Balance -->
+    <div class="stats shadow">
+  <div class="stat">
+    <div class="stat-title">Total Page Views</div>
+    <div id="current-amount" class="stat-value">89400</div>
+    <div class="stat-desc">21% more than last month</div>
+  </div>
+</div>
+<div class="divider divider-primary"></div>
+<!-- button -->
+<div class="flex justify-center space-x-4 ">
+<!-- button add money -->
+ <button id="add-money-btn" class="btn btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add Money</button>
+ <!-- button cash Out -->
+  <button id="cash-out-btn" class=" btn btn-secondary btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Cash Out</button>
+
+</div>
+  <div class="divider divider-secondary"></div>
+   
+  <!-- add money section -->
+    <div id="add-money-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Amount Add</label>
+          <input id="amount" type="number" class="input" placeholder="Amount" />
+          <label class="label">pin</label>
+          <input id="pin" type="password" class="input" placeholder="pin" />
+          <div><a class="link link-hover">Forgot pin number?</a></div>
+          <button id="add-money" class="btn bg-purple-900 text-white btn-xlmt-4">Add Money</button>
+        </fieldset>
+      </div>
+    </div>
+
+  <!-- cash out section -->
+    <div id="cash-out-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Withdraw Money</label>
+          <input id="withdraw-amount" type="number" class="input" placeholder="Amount" />
+          <label class="label">pin</label>
+          <input id="withdraw-pin" type="password" class="input" placeholder="pin" />
+          <div><a class="link link-hover">Forgot pin number?</a></div>
+          <button id="withdraw-money" class="btn bg-purple-900 text-white btn-xlmt-4">Withdraw Money</button>
+        </fieldset>
+      </div>
+    </div>
+
+</div>
+</div>
+
+    </main>
+
+    <script src="/JS/home.js"></script>
+</body>
+</html>
