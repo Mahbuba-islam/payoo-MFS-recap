@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-     <!-- daisai ui and tailwind link cdn -->
+    <!-- daisai ui and tailwind link cdn -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -24,11 +24,13 @@
 </div>
 <div class="divider divider-primary"></div>
 <!-- button -->
-<div class="flex justify-center space-x-4 ">
+<div class="flex justify-center space-x-2">
 <!-- button add money -->
- <button id="add-money-btn" class="btn btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add Money</button>
+ <button id="add-money-btn" class="btn btn-primary btn-xs sm:btn-sm md:btn-md">Add Money</button>
  <!-- button cash Out -->
-  <button id="cash-out-btn" class=" btn btn-secondary btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Cash Out</button>
+  <button id="cash-out-btn" class=" btn btn-secondary btn-xs sm:btn-sm md:btn-md">Cash Out</button>
+ <!-- button trangtion -->
+  <button id='transtion-btn' class=" btn btn-primary text-white sm:btn-sm md:btn-md">Trangraction</button>
 
 </div>
   <div class="divider divider-secondary"></div>
@@ -48,7 +50,7 @@
     </div>
 
   <!-- cash out section -->
-    <div id="cash-out-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <div id="cash-out-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden ">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label">Withdraw Money</label>
@@ -61,11 +63,17 @@
       </div>
     </div>
 
+
+     <!-- trangistion -->
+      <div id ="transgiction-section" class="hidden" >
+        <h1>trangistion</h1>
+      </div>
 </div>
 </div>
 
     </main>
-
+    <script src="/JS/feature.js"></script>
+    <script src="/JS/utility.js"></script>
     <script src="/JS/home.js"></script>
 </body>
 </html>
